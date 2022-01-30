@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/c1eae85dfa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulario - Prueba tecnica</title>
+</head>
+
+<body>
+
+    <header>
+        <nav class="menu">
+            <label class="logo">
+                <img src="img/logo_basico.svg" alt="" width="159">
+            </label>
+            <div class="padre">
+                <input type="checkbox" id="check">
+                <label for="check" class="bar-btn">
+                    <i class="fas fa-bars btn_menu"></i>
+                </label>
+                <ul class="nav-menu">
+                    <li><a href="#">Opción 1</a></li>
+                    <li><a href="#">Opción 2</a></li>
+                    <li><a href="#">Opción 3</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Registrate</h1>
+            <span>Completá con los datos solicitados para poder ingresar</span>
+            <hr>
+            <form action="#" method="get">
+                <div class="contenedor-form2">
+                    <div>
+                        <label for="nombre">Nombre* </label>
+                        <input type="text" name="nombre" id="nombre" placeholder="Ejemplo: Carlos1234" required>
+                    </div>
+                    <div>
+                        <label for="nombre">Apellido* </label>
+                        <input type="text" name="apellido" id="apellido" placeholder="Ejemplo: Carlos1234" required>
+                    </div>
+                    <div>
+                        <label for="fecha">Fecha *</label>
+                        <input type="date" name="fecha" id="fecha" required>
+                    </div>
+                </div>
+
+                <div class="contenedor-form3">
+                    <div>
+                        <label for="selector">Selector *</label>
+                        <select name="selector" id="selector" required>
+                            <option value="">Seleccionar</option>
+                            <option value="ar">Argentina</option>
+                            <option value="bl">Boliviana</option>
+                            <option value="ch">Chilena</option>
+                            <option value="co">Colombiana</option>
+                            <option value="ec">Ecuatoriana</option>
+                            <option value="pg">Paragüaya</option>
+                            <option value="pr">Peruana</option>
+                            <option value="ve">Venezolana</option>
+                            <option value="ur">Urugüaya</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label for="seleccionNumero">Selector de número</label>
+                        <input type="number" name="seleccionNumero" id="seleccionNumero" min="0" value="0">
+                    </div>
+                </div>
+
+                <h2>Dirección Personal</h2>
+                <hr class="hr2">
+                <div class="contenedor-form2">
+                    <div>
+                        <label for="direccion">Dirección *</label>
+                        <input type="text" name="direccion" id="direccion" placeholder="Ejemplo: Av. Siempre Viva 123"
+                            required>
+                    </div>
+
+                    <div>
+                        <label for="localidad">Localidad *</label>
+                        <input type="text" name="localidad" id="localidad" placeholder="Ejemplo: San Telmo" required>
+                    </div>
+
+                    <div>
+                        <label for="selectorNumber">Selector de número*</label>
+                        <input type="number" name="selectorNumber" id="selectorNumber" min="0" value="0" required>
+                    </div>
+
+                </div>
+
+                <div class="contenedor-form terminos">
+                    <input type="checkbox" name="terminos" id="terminos" required>
+                    <label for="terminos">Acepto las Políticas de privacidad & aviso legal *</label>
+                </div>
+
+                <div class="botones">
+                    <button class="atras" type="reset">Volver</button>
+                    <button class="enviar" type="submit">Registrate</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <div class="menu-footer">
+            <div>
+                <div class="footer-content">
+                    <div>
+                        <img src="img/logo_footer.svg" alt="logo de pagina" width="159">
+                    </div>
+                    <ul class="rrss-menu">
+                        <li><a href="#"><i class="fab fa-facebook-f"></i> </a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fab fa-youtube"></i></a></li>
+                        <li><a href="#"><i class="fas fa-rss rs"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div>
+                <div class="footer-content1">
+                    <div>
+                        <img src="img/logo_footer.svg" alt="logo de pagina" width="159">
+                    </div>
+                    <ul class="rrss-menu2">
+                        <li><a href="#">Boletin oficial</a></li>
+                        <li><a href="#">Terminos y condiciones</a></li>
+                        <li><a href="#">Politica de privacidad</a></li>
+                        <li><a href="#">Oficios Judiciales</a></li>
+                        <li><a href="#">Danos tu opinión</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
+
+<!--
+    Documento realizado para entrevista tecnica de Subsecretaría de Tecnología Educativa y Sustentabilidad.
+    Creado por: Anderson Rodríguez 
+    CV: https://drive.google.com/file/d/1J7mw_XxEFiXGqC4nkCiBHWTGVQm5VSsa/view?usp=sharing
+    Portfolio: https://drive.google.com/drive/folders/15JKqc-3_qOZRBfIP572-pc2QgS0_q6Sc?usp=sharing
+    Para contacto:
+    @anderson_ajro 
+    linkedin.com/in/anderson-josé-rodríguez-ospina-9228b3158
+    +54 9 11 2672 2296 
+    andersonajro92gmail.com 
+-->

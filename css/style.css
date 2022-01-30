@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Open+Sans:wght@400;600&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background: #F3F6F9;
+}
+
+header {
+    width: 100%;
+    background-color: #FFFFFF;
+    box-shadow: 0px 3px 6px #00000029;
+}
+
+.menu {
+    max-width: 1085px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    height: 80px;
+}
+
+.bar-btn {
+    color: #5C6A7A;
+    cursor: pointer;
+    font-size: 32px;
+}
+
+.padre {
+    position: relative;
+}
+
+.nav-menu {
+    right: 0;
+    position: absolute;
+    width: 340px;
+    height: 0;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 0px 12px #38485C29;
+    border-radius: 8px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.nav-menu li {
+    display: none;
+    height: 46px;
+    margin: 8px;
+    color: #38485C;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 8px;
+}
+
+.nav-menu li a {
+    color: #5C6A7A;
+    text-decoration: none;
+}
+
+/*Estados del menu*/
+.nav-menu li:hover {
+    background-color: #F3F6F9;
+}
+
+.nav-menu li a:active {
+    color: #007BC7;
+}
+
+/*Menu Open/Closed*/
+#check {
+    display: none;
+}
+
+#check:checked~.nav-menu {
+    height: 162px;
+}
+
+#check:checked~.nav-menu li {
+    display: block;
+}
+
+/*Formulario*/
+
+main {
+    max-width: 1085px;
+    margin: auto;
+    background-color: #FFFFFF;
+    border-radius: 22px;
+    border: #DFE7F0 1px solid;
+    margin-top: 67px;
+}
+
+section {
+    margin: auto;
+    margin: 61px;
+}
+
+h1 {
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -0.05px;
+    line-height: 44px;
+    font-size: 24px;
+    color: #38485C;
+    font-weight: bold;
+}
+
+hr {
+    border: 1px #F3F6F9 solid;
+    margin-top: 22px;
+}
+
+.hr2 {
+    border: 1px #F3F6F9 solid;
+    margin-top: 5px;
+}
+
+span {
+    font-family: 'Open Sans', sans-serif;
+    color: #505E70;
+    font-size: 16px;
+    margin-top: 6px;
+}
+
+form {
+    font-family: 'Open Sans', sans-serif;
+    color: #38485C;
+}
+
+label {
+    font-size: 13px;
+}
+
+input {
+    background-color: #F3F6F9;
+    padding: 13px 16px 13px 16px;
+    border: 1px solid #8A98A8;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    color: #8A98A8;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    display: block;
+}
+
+#selector {
+    background-color: #F3F6F9;
+    padding: 13px 16px 13px 16px;
+    border: 1px solid #8A98A8;
+    border-radius: 4px;
+    font-family: 'Open Sans', sans-serif;
+    color: #8A98A8;
+    font-size: 16px;
+    line-height: 24px;
+    width: 100%;
+    display: block;
+}
+
+button {
+    height: 48px;
+    font-size: 18px;
+    font-weight: bolder;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.atras {
+    background-color: #5C6A7A;
+    width: 103px;
+    color: #FFFFFF;
+}
+
+.enviar {
+    background-color: #FFDB2E;
+    width: 136px;
+    color: #38485C;
+}
+
+#terminos {
+    font-size: 16px;
+    color: #38485C;
+    line-height: 24px;
+}
+
+.contenedor-form2 {
+    display: grid;
+	grid-template-columns: 2fr 2fr auto;
+	gap: 20px;
+    margin-top: 20px;
+}
+.contenedor-form3{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr auto;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.terminos {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.terminos label {
+    font-size: 16px;
+    color: #38485C;
+    line-height: 24px;
+}
+
+h2 {
+    margin-top: 60px;
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: -0.05px;
+
+}
+
+.botones {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+    gap: 15px;
+}
+
+input[type=checkbox] {
+    transform: scale(1.5);
+    max-width: 35px;
+}
+
+footer {
+    width: 100%;
+    background-color: #333333;
+    border-top: 3px #FCDA59 solid;
+    margin-top: 151px;
+}
+
+.menu-footer {
+    max-width: 1085px;
+    margin: auto;
+    color: white;
+}
+
+.footer-content {
+    display: flex;
+    border-bottom: 1px solid white;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.footer-content1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+.rrss-menu {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    text-decoration: none;
+    width: 290px;
+}
+
+.rrss-menu li a {
+    display: flex;
+    flex-wrap: wrap;
+    text-decoration: none;
+}
+
+.fab {
+    color: #FFFFFF;
+    font-size: 15px;
+}
+
+.rs {
+    color: #FFFFFF;
+}
+
+.rrss-menu2 {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.rrss-menu2 li a {
+    color: #FFFFFF;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    line-height: 19px;
+    margin: 10px;
+    line-height: 19px;
+}
+
+@media screen and (max-width: 1100px) {
+
+    .nav-menu {
+    right: 30%;
+    width: 280px;}
+
+    .bar-btn {
+    margin-right: 20px;
+    }
+
+    main{
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-top: 50px;
+    }
+
+
+    .contenedor-form2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .contenedor-form3{
+        display: grid;
+        grid-template-columns: 2fr 1fr auto;
+        gap: 20px;
+    }
+
+    .rrss-menu {
+    margin-right: 15px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+    }
+
+    .rrss-menu2 {
+    margin-right: 15px;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .rrss-menu2 li  {
+    margin: 20px;
+    }
+
+    .footer-content {
+     display: flex;
+     flex-direction: column;
+
+    }
+    .footer-content1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
+
+    footer {
+     margin-top: 50px;
+    }
+
+    h2 {
+        margin-top: 40px;
+        letter-spacing: -0.05px;
+    }
+}
+
+@media screen and (max-width: 580px) {
+
+    .contenedor-form2 {
+        display: grid;
+        grid-template-columns: 1fr ;
+        gap: 20px;
+    }
+
+    .contenedor-form3{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .nav-menu {
+    width: 280px;
+}
+    section {
+        margin: auto;
+        margin: 21px;
+    }
+
+    .rrss-menu {
+    margin-right: 15px;
+    margin-left: 15px;
+        }
+}
